@@ -33,7 +33,6 @@ Average = (number1 + number2 + number3)/3
 print("Average of the numbers: ", Average)
 
 5.
-
 talents = input("Enter the weight in talents: \n")
 pounds = input("Enter the weight in pounds: \n")
 lots = input("Enter the weight in lots: \n")
