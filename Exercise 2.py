@@ -1,14 +1,14 @@
-1.
+2.1.
 user = input('Enter your name: ')
 print("Nice to meet you, " + user + "!")
 
-2.
+2.2.
 radius_str = input("Enter radius of circle: ")
 radius = float(radius_str)
 area = 3.14159 * radius * radius
 print("Area of the circle =", area)
 
-3.
+2.3.
 length_str = input("Enter the length of the rectangle: ")
 length = float(length_str)
 width_str = input("Enter the width of the rectangle: ")
@@ -18,7 +18,7 @@ area = length*width
 print("Area of rectangle : ",area)
 print("Perimeter of rectangle : ",perimeter)
 
-4.
+2.4.
 number1_str = input("Enter the first integer number: ")
 number1 = float(number1_str)
 number2_str = input("Enter the second integer number: ")
@@ -32,7 +32,7 @@ print("Multiplication of the numbers: ", Product)
 Average = (number1 + number2 + number3)/3
 print("Average of the numbers: ", Average)
 
-5.
+2.5.
 talents = input("Enter the weight in talents: \n")
 pounds = input("Enter the weight in pounds: \n")
 lots = input("Enter the weight in lots: \n")
@@ -41,7 +41,7 @@ grams = (kg - int(kg))*1000
 print("The weight in modern units:")
 print(int(kg), "kilograms and", round(grams, 2), "grams")
 
-6.
+2.6.
 import random
 print("Random combinations of numbers for a 3-digit code combination lock (0-9): ")
 for i in range(0, 3):
