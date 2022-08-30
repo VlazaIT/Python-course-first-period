@@ -19,5 +19,22 @@ else:
     print("Invalid cabin class")
 
 3.3
-
+gender = str(input("Indicate your biological gender (Male/Female): "))
+hemoglobin = float(input("Enter your hemoglobin level: "))
+if gender == "Male":
+    if hemoglobin < 134:
+        print("You have a low hemoglobin value")
+    elif hemoglobin > 167:
+        print("You have a high hemoglobin value")
+    else:
+        print("Your hemoglobin level is normal")
+elif gender == "Female":
+    if hemoglobin < 117:
+        print("You have a low hemoglobin value")
+    elif hemoglobin > 155:
+        print("You have a high hemoglobin value")
+    else:
+        print("Your hemoglobin level is normal")
+else:
+    print("Invalid biological gender entered")
 
