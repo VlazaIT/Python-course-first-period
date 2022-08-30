@@ -43,3 +43,20 @@ while guess_number != random_number:
     else:
         print("Oh, sorry, your guess is too low")
 
+4.5
+import sys
+correct_username = "python"
+correct_password = "rules"
+tries = 0
+user_username = " "
+user_password = " "
+while (correct_username != user_username or correct_password != user_password):
+    user_username = str(input("Enter your username: "))
+    user_password = str(input("Enter your password: "))
+    tries = tries + 1
+    if tries == 5:
+        print("Access denied")
+        sys.exit()
+    if (user_username != correct_username or user_password != correct_password):
+        print("Please, enter the credentials again.")
+print("You are welcome!")
