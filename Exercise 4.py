@@ -12,3 +12,21 @@ while inches >= 0:
     print(f"There is {cm} cm in {inches} inches")
     inches = float(input("Enter an amount of inches: "))
 print("Program finished due to a negative value")
+
+4.3
+import sys
+mylist = []
+number = input("Enter a number: ")
+if number == " ":
+    print("Program finished, no max & min numbers")
+    sys.exit()
+mylist.append(number)
+while number != " ":
+    number = input("Enter a number: ")
+    if number == " ":
+        break
+    mylist.append(number)
+print(mylist)
+print(f"The maximum number received from the user is {max(mylist)}")
+print(f"The minimum number received from the user is {min(mylist)}")
+
