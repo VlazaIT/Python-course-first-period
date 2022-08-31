@@ -67,7 +67,7 @@ import math
 n = 0
 z = 0
 N = int(input("Enter how many random points to generate: "))
-while z <= N:
+while z < N:
     x = random.uniform(-1,1)
     y = random.uniform(-1,1)
     z = z +1
