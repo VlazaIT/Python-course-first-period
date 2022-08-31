@@ -60,3 +60,18 @@ while (correct_username != user_username or correct_password != user_password):
     if (user_username != correct_username or user_password != correct_password):
         print("Please, enter the credentials again.")
 print("You are welcome!")
+
+4.6
+import random
+import math
+n = 0
+z = 0
+N = int(input("Enter how many random points to generate: "))
+while z <= N:
+    x = random.uniform(-1,1)
+    y = random.uniform(-1,1)
+    z = z +1
+    if x*x+y*y < 1:
+        n = n + 1
+print(f"The approximate value of π is: {4*n/N}")
+print(f"Real π= {math.pi}")
