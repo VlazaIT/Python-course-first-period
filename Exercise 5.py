@@ -42,3 +42,14 @@ else:
             break
     else:
         print("The number is prime")
+
+5.4
+
+list_cities = []
+
+for i in range(0,5):
+    city = str(input("Enter a name of the city: "))
+    list_cities.append(city)
+
+for i in range(len(list_cities)):
+    print(list_cities[i])
