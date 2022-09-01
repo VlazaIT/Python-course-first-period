@@ -12,3 +12,19 @@ for n in range(number_dice):
 
 print(f"Sum of the numbers is {sum(dice_list)}")
 
+5.2
+
+fault = ""
+number = 0
+numbers = []
+
+while number != fault:
+    number = input("Enter number: ")
+    if number == fault:
+        break
+    numbers.append(number)
+
+modified_numbers = [float(i) for i in numbers]
+print(modified_numbers)
+modified_numbers.sort(reverse=True)
+print(modified_numbers [0:5])
