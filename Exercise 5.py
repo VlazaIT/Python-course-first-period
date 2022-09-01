@@ -28,3 +28,17 @@ modified_numbers = [float(i) for i in numbers]
 print(modified_numbers)
 modified_numbers.sort(reverse=True)
 print(modified_numbers [0:5])
+
+5.3
+
+number = int(input("Enter an integer number: " ))
+
+if number == 1:
+    print("The number is not prime")
+else:
+    for i in range(2, number):
+        if (number%i == 0):
+            print("The number is not prime")
+            break
+    else:
+        print("The number is prime")
