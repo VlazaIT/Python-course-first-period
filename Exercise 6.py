@@ -57,3 +57,18 @@ def summa(list):
 list = [1,3,10,5]
 final_sum = summa(list)
 print(f"The sum of the numbers is: {final_sum}")
+
+#6.5
+
+def removing(list_int):
+    new_list = []
+    for i in list_int:
+        if i % 2 == 0:
+            even = i
+            new_list.append(even)
+    return new_list
+
+list_int = [0,1,2,3,4,5,6,7,8,9,10,11,-1,-2,-3,-4,-9,-1111110,-1]
+print(f"Old list: {list_int}")
+new_list = removing(list_int)
+print(f"New list: {new_list}")
