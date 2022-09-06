@@ -48,3 +48,12 @@ while gallons >= 0:
 else:
     print("You entered a negative value")
 
+#6.4
+
+def summa(list):
+    result = sum(list)
+    return result
+
+list = [1,3,10,5]
+final_sum = summa(list)
+print(f"The sum of the numbers is: {final_sum}")
