@@ -33,3 +33,18 @@ while value != max_value:
 
 print(f"Since the result is {max_value}, program is finished after {i} rounds")
 
+#6.3
+
+def conversion(input):
+    liters = input * 3.78541
+    return liters
+
+gallons = float(input("Enter gasoline volume in gallons: "))
+
+while gallons >= 0:
+    liters = conversion(gallons)
+    print(f"There are {liters:.2f} liters in {gallons:.2f} gallons")
+    gallons = float(input("Enter gasoline volume in gallons: "))
+else:
+    print("You entered a negative value")
+
