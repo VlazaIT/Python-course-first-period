@@ -74,3 +74,23 @@ new_list = removing(list_int)
 print(f"New list: {new_list}")
 
 #6.6
+
+def price(diameter, price):
+    result = price / (3.1415926 * (diameter / 2 / 100) ** 2)
+    return result
+
+diameter1 = int(input("Enter the diameter for the first pizza in cm: "))
+price1 = int(input("Enter the price for the first pizza in EUR: "))
+result1 = price(diameter1, price1)
+diameter2 = int(input("Enter the diameter for the second pizza in cm: "))
+price2 = int(input("Enter the price for the second pizza in EUR: "))
+result2 = price(diameter2, price2)
+print(f"{result1:.2f} EUR per m2")
+print(f"{result2:.2f} EUR per m2")
+
+if result1 < result2:
+    print("The 1st pizza provides better value for money compared to the 2nd one")
+elif result1 > result2:
+    print("The 2nd pizza provides better value for money compared to the 1st one")
+else:
+    print("Both pizzas provide equal value")
