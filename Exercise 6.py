@@ -72,3 +72,5 @@ list_int = [0,1,2,3,4,5,6,7,8,9,10,11,-1,-2,-3,-4,-9,-1111110,-1]
 print(f"Old list: {list_int}")
 new_list = removing(list_int)
 print(f"New list: {new_list}")
+
+#6.6
