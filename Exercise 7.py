@@ -31,3 +31,24 @@ while new_name != "":
 else:
     for n in names:
         print(n)
+
+#7.3
+
+airports = {"KLAX": "Los Angeles International Airport",
+            "LFPG": "Charles de Gaulle Airport",
+            "EHAM": "Amsterdam Airport Schiphol"}
+
+choice = str(input("Would you like to enter a new airport (then type ENTER), fetch the information of an existing airport (then type FETCH) or quit (type QUIT): "))
+
+while choice != "QUIT":
+    if choice == "ENTER":
+        new_airport_name = input("Enter new airport's name: ")
+        new_airport_ICAO = input("Enter new airport's ICAO code: ")
+        airports[new_airport_ICAO] = new_airport_name
+    elif choice == "FETCH":
+        existing_ICAO = input("Enter existing airport's ICAO code: ")
+        if existing_ICAO in airports:
+            print(f"{existing_ICAO} is ICAO code for {airports[existing_ICAO]}")
+    choice = input("Would you like to enter a new airport (then type ENTER), fetch the information of an existing airport (then type FETCH) or quit (type QUIT): ")
+# Used print to be sure all the airports were added to the dictionary
+print(airports)
