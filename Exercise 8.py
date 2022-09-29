@@ -81,6 +81,6 @@ ICAO_code1 = input("Enter the first ICAO code: ")
 ICAO_code2 = input("Enter the second ICAO code: ")
 Location1 = calculation(ICAO_code1)
 Location2 = calculation(ICAO_code2)
-DistanceFinal = geodesic(Location1, Location2)
+DistanceFinal = geodesic(Location1, Location2).km
 print(f"The distance between airports is: {DistanceFinal} km.")
 
