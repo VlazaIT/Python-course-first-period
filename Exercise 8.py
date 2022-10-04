@@ -3,7 +3,7 @@
 import mysql.connector
 
 def getAirportsNameLocation(Given_code):
-    sql = "SELECT ident, name, municipality FROM airports WHERE indent='" + Given_code + "'"
+    sql = "SELECT ident, name, municipality FROM airports WHERE ident='" + Given_code + "'"
     print(sql)
     cursor = connection.cursor()
     cursor.execute(sql)
