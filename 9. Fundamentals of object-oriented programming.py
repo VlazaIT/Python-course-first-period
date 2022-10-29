@@ -1,4 +1,4 @@
-#9.1
+#Exercise 9.1
 
 # Write a Car class that has the following properties: registration number, maximum speed, current speed and travelled distance.
 # Add a class initializer that sets the first two of the properties based on parameter values.
@@ -17,4 +17,3 @@ car1 = Car("ABC-123", 142)
 
 print(f"New car's properties are: \n Registration number: {car1.registration_number:s}, \n Maximum speed of {car1.max_speed:d} km/h,\n "
       f"Current speed of {car1.current_speed:d} km/h, \n Travelled distance of {car1.travelled_distance:d} km.")
-
