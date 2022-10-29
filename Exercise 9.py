@@ -8,3 +8,10 @@
 
 class Car:
     def __init__(self, registration_number, max_speed, current_speed, distance):
+        dsds
+        dsds
+
+        dsdsds
+
+
+        dsdsd
